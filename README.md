@@ -51,27 +51,6 @@ Certainly! Below is a README section for the "Issues" part of your code. It expl
 
 ---
 
-## Issues with User Input Handling
-
-In the provided code snippet, there is an issue with the user input handling in the "Issues" section. The issue arises from the fact that the user is prompted to input their name in the "AskName" step, and immediately afterward, the input is expected again in the "Name" step.
-
-### Problematic Steps
-
-```jsx
-{
-  id: "AskName",
-  message: "Please enter your name: ",
-  trigger: "Name"
-},
-{
-  id: "Name",
-  user: true,
-  trigger: "Issues"
-},
-```
-
-In the above steps, the user is asked to enter their name in the "AskName" step, and then the input is expected again in the "Name" step, which seems redundant.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
