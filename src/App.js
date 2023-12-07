@@ -5,11 +5,7 @@ import { Segment } from 'semantic-ui-react';
 function App() {
 
   const steps = [
-    {
-      id: "Greet",
-      message: "Hello, Welcome to our Website!",
-      trigger: "AskName"
-    },
+    
     {
       id: "AskName",
       message: "Please enter your name: ",
@@ -18,6 +14,17 @@ function App() {
     {
       id: "Name",
       user: true,
+      trigger: "Greet"
+    },
+    {
+      id: "Greet",
+      message: "Hello, Welcome to our Website! {previousValue}",
+      trigger: "Info"
+    },
+
+    {
+      id: "Info",
+      message: "What is your occupation?",
       trigger: "Issues"
     },
     {
