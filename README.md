@@ -39,12 +39,6 @@ const steps = [
 const SimpleChatbot = () => <ChatBot steps={steps} />;
 ```
 
-3. Render the chatbot component in your application:
-
-```jsx
-ReactDOM.render(<SimpleChatbot />, document.getElementById('root'));
-```
-
 ## Configuration
 
 Customize the chatbot's behavior by configuring steps, messages, and triggers. Refer to the [official documentation](link-to-docs) for detailed configuration options.
